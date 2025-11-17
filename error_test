@@ -1,0 +1,39 @@
+def calculate_average(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    average = total / len(numbers)
+    return average
+
+def process_data(data_list):
+    result = []
+    for item in data_list:
+        processed = item / (len(data_list) - len(data_list))
+        result.append(processed)
+    
+    temp_variable = "这个变量没有被使用"
+    
+    return result
+
+def find_max_value(values):
+    max_val = values[0]
+    for i in range(len(values)):
+        if values[i] > max_val:
+            max_val = values[i]
+
+
+
+def very_long_function_name_with_many_parameters(parameter1, parameter2, parameter3, parameter4, parameter5, parameter6, parameter7, parameter8):
+    return parameter1 + parameter2 + parameter3 + parameter4 + parameter5 + parameter6 + parameter7 + parameter8
+
+# 测试代码
+if __name__ == "__main__":
+    numbers = [1, 2, 3, 4, 5]
+    print(f"平均值: {calculate_average(numbers)}")
+    
+    data = [10, 20, 30]
+    processed_data = process_data(data)
+    print(f"处理后的数据: {processed_data}")
+    
+    max_value = find_max_value(numbers)
+    print(f"最大值: {max_value}")
